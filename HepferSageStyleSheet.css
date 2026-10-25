@@ -1,0 +1,50 @@
+/* PC Gaming Website Stylesheet */
+
+body {
+    background-color: #121826;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #00bfff;
+    text-align: center;
+}
+
+h2 {
+    color: #00bfff;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #66ccff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+span.boldtext {
+    font-weight: bold;
+}
+
+span.italictext {
+    font-style: italic;
+}
