@@ -28,12 +28,18 @@ a {
 
 table {
     width: 100%;
+    background-color: #243247;
     border-collapse: collapse;
 }
 
 table, th, td {
     border: 1px solid white;
+}
+
+th, td {
     padding: 8px;
+    text-align: left;
+    vertical-align: middle;
 }
 
 img {
