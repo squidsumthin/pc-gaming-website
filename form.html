@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A survey about PC gaming habits and hardware.">
+  <meta name="keywords" content="PC gaming, hardware, gaming survey">
+  <meta name="author" content="Sage Hepfer">
+  <title>PC Gaming Survey</title>
+  <link rel="stylesheet" href="HepferSageStyleSheet.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="table.html">Hardware</a> |
+    <a href="form.html">Survey</a>
+  </nav>
+
+  <h1>PC Gaming Survey</h1>
+
+  <form action="https://httpbin.org/post" method="post">
+    <p>
+      <label for="favorite-game">What is your favorite PC game?</label><br>
+      <input type="text" id="favorite-game" name="favorite_game">
+    </p>
+
+    <fieldset>
+      <legend>How often do you play PC games?</legend>
+      <label for="daily">Daily</label>
+      <input type="radio" id="daily" name="play_frequency" value="daily"><br>
+
+      <label for="weekly">A few times a week</label>
+      <input type="radio" id="weekly" name="play_frequency" value="weekly"><br>
+
+      <label for="occasionally">Occasionally</label>
+      <input type="radio" id="occasionally" name="play_frequency" value="occasionally">
+    </fieldset>
+
+    <fieldset>
+      <legend>Which parts would you upgrade? Select any that apply.</legend>
+      <label for="gpu">Graphics card</label>
+      <input type="checkbox" id="gpu" name="upgrades" value="gpu"><br>
+
+      <label for="cpu">Processor</label>
+      <input type="checkbox" id="cpu" name="upgrades" value="cpu"><br>
+
+      <label for="ram">Memory</label>
+      <input type="checkbox" id="ram" name="upgrades" value="ram">
+    </fieldset>
+
+    <p>
+      <label for="genres">Which game genres do you play? You can select more than one.</label><br>
+      <select id="genres" name="genres" multiple size="4">
+        <option value="shooter">Shooter</option>
+        <option value="racing">Racing</option>
+        <option value="strategy">Strategy</option>
+        <option value="simulation">Simulation</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="comments">What would you change about your gaming setup?</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="28"></textarea>
+    </p>
+
+    <button type="submit">Submit Survey</button>
+    <button type="reset">Clear Answers</button>
+  </form>
+</body>
+</html>
